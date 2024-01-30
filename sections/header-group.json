@@ -15,7 +15,7 @@
         "announcement_xTfRWH": {
           "type": "announcement",
           "settings": {
-            "text": "Spedizione gratuita per ordini superiori a 100€",
+            "text": "SPEDIZIONE GRATUITA per ordini superiori a 100€",
             "link": ""
           }
         }
@@ -29,7 +29,7 @@
         "show_line_separator": false,
         "show_social": false,
         "auto_rotate": true,
-        "change_slides_speed": 2,
+        "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": true
       }
