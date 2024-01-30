@@ -11,24 +11,16 @@
             "text": "Benvenuto nel nostro store",
             "link": ""
           }
-        },
-        "announcement_xTfRWH": {
-          "type": "announcement",
-          "settings": {
-            "text": "SPEDIZIONE GRATUITA per ordini superiori a 100€",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_xTfRWH"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": false,
         "show_social": false,
-        "auto_rotate": true,
+        "auto_rotate": false,
         "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": true
