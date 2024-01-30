@@ -46,7 +46,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "announcement-bar2",
     "header"
   ]
 }
