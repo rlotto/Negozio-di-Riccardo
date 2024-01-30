@@ -11,10 +11,18 @@
             "text": "Benvenuto nel nostro store",
             "link": ""
           }
+        },
+        "announcement_xTfRWH": {
+          "type": "announcement",
+          "settings": {
+            "text": "Spedizione gratuita per ordini superiori a 100€",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_xTfRWH"
       ],
       "settings": {
         "color_scheme": "background-1",
