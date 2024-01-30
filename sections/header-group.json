@@ -11,10 +11,18 @@
             "text": "Benvenuto nel nostro store",
             "link": ""
           }
+        },
+        "announcement_xi7XFG": {
+          "type": "announcement",
+          "settings": {
+            "text": "SPEDIZIONE GRATUITA su ordini superiori a 100€",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_xi7XFG"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -24,6 +32,18 @@
         "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": true
+      }
+    },
+    "announcement_bar_4epPdc": {
+      "type": "announcement-bar",
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
       }
     },
     "header": {
@@ -47,6 +67,7 @@
   },
   "order": [
     "announcement-bar",
+    "announcement_bar_4epPdc",
     "header"
   ]
 }
