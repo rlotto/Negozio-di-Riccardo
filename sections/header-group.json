@@ -2,7 +2,7 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar2": {
+    "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
         "announcement-bar-0": {
@@ -46,7 +46,7 @@
     }
   },
   "order": [
-    "announcement-bar2",
+    "announcement-bar",
     "header"
   ]
 }
