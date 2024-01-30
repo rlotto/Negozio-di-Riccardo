@@ -26,12 +26,12 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "show_social": false,
         "auto_rotate": true,
-        "change_slides_speed": 3,
+        "change_slides_speed": 2,
         "enable_country_selector": false,
-        "enable_language_selector": false
+        "enable_language_selector": true
       }
     },
     "header": {
