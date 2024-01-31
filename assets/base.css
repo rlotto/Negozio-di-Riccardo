@@ -3516,5 +3516,5 @@ details-disclosure > details {
 }
 
 body, html {
-  overflow: hidden;
+  overflow: scroll;
 }
