@@ -2213,7 +2213,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .announcement-bar .slider-button--next:focus-visible,
-.announcement-bar .slider-button--prev:focus-visible,
+.announcement-bar .slider-button--prev:focus-visible {
+  visibility: hidden;
+}
 .utility-bar .list-social__link:focus-visible {
   outline-offset: -0.3rem;
   box-shadow: 0 0 0 -0.2rem rgb(var(--color-foreground));
