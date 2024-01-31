@@ -72,3 +72,7 @@ input::-webkit-search-decoration {
 .template-search__results {
   position: relative;
 }
+
+.field_input{
+  border-radius: 1em;
+}
