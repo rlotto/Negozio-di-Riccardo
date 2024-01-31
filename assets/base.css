@@ -2172,6 +2172,13 @@ product-info .loading__spinner:not(.hidden) ~ *,
   }
 }
 
+@media screen and (min-width: 1440px){
+  .announcement-bar, .announcement-bar__announcement {
+    justify-content: left;
+    align-content: left;
+  }
+}
+
 .announcement-bar,
 .announcement-bar__announcement {
   color: rgb(var(--color-foreground));
