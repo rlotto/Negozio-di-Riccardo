@@ -25,6 +25,12 @@ setta announcement_bar = true (se è presente alemno un blocco).
 {% endif %}
 
 {% comment %} Qui inizia il codice html {% endcomment %}
+/**
+ * This liquid code represents the HTML structure and classes for the announcement bar section.
+ * It dynamically applies different classes based on the settings and blocks defined in the section.
+ * The classes control the color scheme, gradient, line separator, social icons, and localization options.
+ * The block.shopify_attributes are also included in the HTML attributes.
+ */
 <div
   class="utility-bar color-{{ section.settings.color_scheme }} gradient
     {% if section.settings.show_line_separator and section.blocks.size > 0 %} 
