@@ -1,6 +1,11 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
+{% comment %} 
+Setta le icone social = true (se sono stati impostati i link), 
+setta language_country_selector = true (se è stato attivato il selettore di lingua o paese,
+setta announcement_bar = true (se è presente alemno un blocco).
+{% endcomment %}
 {%- liquid
   assign social_icons = true
   if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -14,12 +19,22 @@
   endif
 -%}
 
+{% comment %} se le icone social sono attive, carica il file css {% endcomment %}
 {% if social_icons %}
   {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
+{% comment %} Qui inizia il codice html {% endcomment %}
 <div
-  class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %}"
+  class="utility-bar color-{{ section.settings.color_scheme }} gradient
+    {% if section.settings.show_line_separator and section.blocks.size > 0 %} 
+      utility-bar--bottom-border
+    {% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} 
+      utility-bar--bottom-border-social-only
+    {% endif %}
+    {% if section.settings.enable_country_selector or section.settings.enable_language_selector %} 
+      header-localization
+    {% endif %}"
   {{ block.shopify_attributes }}
 >
   <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
