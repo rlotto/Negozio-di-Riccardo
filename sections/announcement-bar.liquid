@@ -25,10 +25,12 @@ setta announcement_bar = true (se è presente alemno un blocco).
 {% endif %}
 
 {% comment %} Qui inizia il codice html 
+
 This liquid code represents the HTML structure and classes for the announcement bar section.
 It dynamically applies different classes based on the settings and blocks defined in the section.
 The classes control the color scheme, gradient, line separator, social icons, and localization options.
 The block.shopify_attributes are also included in the HTML attributes.
+
 {% endcomment %}
 
 <div
@@ -41,12 +43,20 @@ The block.shopify_attributes are also included in the HTML attributes.
     {% if section.settings.enable_country_selector or section.settings.enable_language_selector %} 
       header-localization
     {% endif %}"
-  {{ block.shopify_attributes }}
->
-  <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
+  {{ block.shopify_attributes }}>
+
+  <div class="page-width utility-bar__grid
+    {% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} 
+      utility-bar__grid--3-col
+    {% elsif language_country_selector or section.settings.show_social and social_icons %} 
+      utility-bar__grid--2-col
+    {% endif %}">
+    
     {%- if section.settings.show_social and social_icons -%}
       {%- render 'social-icons' -%}
     {%- endif -%}
+
+    {% comment %} condizione in cui ci sia solo una announcement bar (singolo annuncio) {% endcomment %}
     {%- if section.blocks.size == 1 -%}
       <div
         class="announcement-bar{% if section.settings.show_social %} announcement-bar--one-announcement{% endif %}"
@@ -72,6 +82,8 @@ The block.shopify_attributes are also included in the HTML attributes.
           {%- endif -%}
         {%- endif -%}
       </div>
+
+    {% comment %} condizione in cui ci sono almeno 2 annunci {% endcomment %}  
     {%- elsif section.blocks.size > 1 -%}
       <slideshow-component
         class="announcement-bar"
@@ -80,15 +92,7 @@ The block.shopify_attributes are also included in the HTML attributes.
         aria-label="{{ 'sections.announcements.announcement_bar' | t }}"
       >
         <div class="announcement-bar-slider slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            {% render 'icon-caret' %}
-          </button>
+          
           <div
             class="grid grid--1-col slider slider--everywhere"
             id="Slider-{{ section.id }}"
@@ -155,6 +159,7 @@ The block.shopify_attributes are also included in the HTML attributes.
         </style>
       {%- endif -%}
     {%- endif -%}
+
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
         <noscript class="small-hide medium-hide">
