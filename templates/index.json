@@ -7,13 +7,13 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/scottish-highlands_connor-mollison-3rkosr_dgfg-unsplash_1.jpg",
-            "heading": "Collezzione Uomo",
+            "heading": "Collezione Uomo",
             "heading_size": "h1",
-            "subheading": "<strong>Esplora la nostra collezione di abbigliamento da uomo elegante e di qualità.<\/strong>",
+            "subheading": "<strong>Esplora la nostra pratica e funzionale collezione da uomo<\/strong>",
             "button_label": "Vai!",
             "link": "shopify:\/\/collections\/uomo",
             "button_style_secondary": true,
-            "box_align": "top-left",
+            "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 40,
@@ -24,18 +24,19 @@
         "slide_7mpXTF": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify:\/\/shop_images\/Scotland.jpg",
+            "heading": "Collezione donna",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
+            "subheading": "<strong>Esplora la nostra comoda ed elegante collezione da donna<\/strong>",
+            "button_label": "Vai!",
+            "link": "shopify:\/\/collections\/donna",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 40,
+            "color_scheme": "scheme-ccf2a588-9053-45fc-bf7c-6b0686c21bf8-inverted",
+            "text_alignment_mobile": "right"
           }
         }
       },
