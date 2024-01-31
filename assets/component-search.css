@@ -78,5 +78,5 @@ input::-webkit-search-decoration {
 }
 
 .template-search__results {
-  overflow: auto;
+  overflow: scroll;
 }
