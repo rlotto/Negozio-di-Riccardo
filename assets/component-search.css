@@ -76,3 +76,7 @@ input::-webkit-search-decoration {
 .search__input.field__input {
   border-radius: 0.6rem;
 }
+
+*{
+scrollbar-width: 0px;
+}
