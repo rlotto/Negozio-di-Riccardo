@@ -74,5 +74,5 @@ input::-webkit-search-decoration {
 }
 
 .field_input{
-  border-radius: 1em;
+  border: 5px;
 }
