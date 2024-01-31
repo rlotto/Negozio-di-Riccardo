@@ -77,6 +77,6 @@ input::-webkit-search-decoration {
   border-radius: 0.6rem;
 }
 
-*{
-scrollbar-width: 0px;
+.template-search__results {
+  overflow: auto;
 }
