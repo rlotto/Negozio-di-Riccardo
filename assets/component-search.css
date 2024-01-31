@@ -76,7 +76,3 @@ input::-webkit-search-decoration {
 .search__input.field__input {
   border-radius: 0.6rem;
 }
-
-.template-search__results {
-  overflow: scroll;
-}
