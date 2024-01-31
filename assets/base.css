@@ -2203,6 +2203,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .announcement-bar .slider-button--next {
+  visibility: hidden;
   margin-right: -1.5rem;
   min-width: 44px;
 }
@@ -2213,9 +2214,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .announcement-bar .slider-button--next:focus-visible,
-.announcement-bar .slider-button--prev:focus-visible {
-  visibility: hidden;
-}
+.announcement-bar .slider-button--prev:focus-visible,
 .utility-bar .list-social__link:focus-visible {
   outline-offset: -0.3rem;
   box-shadow: 0 0 0 -0.2rem rgb(var(--color-foreground));
