@@ -2316,13 +2316,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   --announcement-translate-to: -1.5rem;
   animation-name: translateAnnouncementSlideOut;
 }
-@media screen and (max-width: 1440px){
-  .announcement-bar, .announcement-bar__announcement {
-    justify-content: left;
-    align-content: left;
-  }
-}
-
 
 @keyframes translateAnnouncementSlideIn {
   0% {
