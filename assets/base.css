@@ -2204,12 +2204,12 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .announcement-bar .slider-button--next {
   visibility: hidden;
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .announcement-bar .slider-button--prev {
   visibility: hidden;
-  margin-left: 0;
+  margin-left: 0px;
 }
 
 .announcement-bar .slider-button--next:focus-visible,
