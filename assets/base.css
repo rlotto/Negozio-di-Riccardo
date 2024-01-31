@@ -2172,12 +2172,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   }
 }
 
-@media screen and (min-width: 1440px){
-  .announcement-bar, .announcement-bar__announcement {
-    justify-content: left;
-    align-content: left;
-  }
-}
 
 .announcement-bar,
 .announcement-bar__announcement {
@@ -2322,6 +2316,13 @@ product-info .loading__spinner:not(.hidden) ~ *,
   --announcement-translate-to: -1.5rem;
   animation-name: translateAnnouncementSlideOut;
 }
+@media screen and (min-width: 1440px){
+  .announcement-bar, .announcement-bar__announcement {
+    justify-content: left;
+    align-content: left;
+  }
+}
+
 
 @keyframes translateAnnouncementSlideIn {
   0% {
