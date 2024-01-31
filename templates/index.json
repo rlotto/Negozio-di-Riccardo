@@ -6,7 +6,7 @@
         "slide_yeGHED": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/scottish-highlands_connor-mollison-3rkosr_dgfg-unsplash_1.jpg",
+            "image": "shopify:\/\/shop_images\/Scotland.jpg",
             "heading": "Collezione Uomo",
             "heading_size": "h1",
             "subheading": "<strong>Esplora la nostra pratica e funzionale collezione da uomo<\/strong>",
@@ -96,13 +96,13 @@
         "text_iWnYFE": {
           "type": "text",
           "settings": {
-            "text": "<p>Scopri perchè dovresti scegliere Negozio di Riccardo, scopri cosa facciamo per l'ambiente<\/p>"
+            "text": "<p>Scopri perchè dovresti scegliere Negozio di Riccardo e cosa facciamo per l'ambiente<\/p>"
           }
         },
         "button_WH99TX": {
           "type": "button",
           "settings": {
-            "button_label": "Scopri!",
+            "button_label": "Scopri di più",
             "button_link": "shopify:\/\/blogs\/per-lambiente",
             "button_style_secondary": false,
             "button_label_2": "",
