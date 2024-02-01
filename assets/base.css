@@ -3274,6 +3274,7 @@ details-disclosure > details {
   scale: var(--zoom-in-ratio);
 }
 
+/* no scrollbar */
 body::-webkit-scrollbar {
   display: none;
 }
