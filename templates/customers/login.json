@@ -1,1 +1,17 @@
-{"sections":{"main":{"type":"main-login","settings":{"padding_top":36,"padding_bottom":36}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "custom_css": [
+        "#CustomerEmail, #CustomerPassword {border-radius: 10px;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
