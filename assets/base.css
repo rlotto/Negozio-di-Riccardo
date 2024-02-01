@@ -3274,6 +3274,10 @@ details-disclosure > details {
   scale: var(--zoom-in-ratio);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Animations */
 
 @media (prefers-reduced-motion: no-preference) {
@@ -3515,11 +3519,4 @@ details-disclosure > details {
   }
 }
 
-body {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-  }
-body::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-  }
 
