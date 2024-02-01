@@ -352,7 +352,7 @@
     background: transparent;
     max-width: 89rem;
     border: none;
-    border-radius: 0;
+    border-radius: 20px;
     box-shadow: none;
   }
 
