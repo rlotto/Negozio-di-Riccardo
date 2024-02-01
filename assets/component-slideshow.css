@@ -205,3 +205,7 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(0.8);
 }
+
+slideshow-component {
+  border-radius: 30px;
+}
