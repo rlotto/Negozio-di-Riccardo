@@ -45,7 +45,7 @@
         "slide_7mpXTF"
       ],
       "custom_css": [
-
+        ".slideshow__controls {border-radius: 0 0 10px 10px; }"
       ],
       "settings": {
         "layout": "grid",
