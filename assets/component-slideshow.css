@@ -2,6 +2,7 @@ slideshow-component {
   position: relative;
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 989px) {
@@ -23,7 +24,6 @@ slideshow-component .slideshow.banner {
   display: flex;
   flex-direction: column;
   visibility: visible;
-  border-radius: 20px;
 }
 
 @media screen and (max-width: 749px) {
