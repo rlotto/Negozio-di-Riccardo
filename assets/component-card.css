@@ -449,9 +449,7 @@
 
   
 
-  .product-card-wrapper .shape--blob {
-    transition: clip-path var(--duration-long) ease-in-out;
-  }
+
 
   .product-card-wrapper:hover .shape--blob {
     clip-path: polygon(var(--shape--blob-5));
