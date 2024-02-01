@@ -6,7 +6,7 @@
         "slide_yeGHED": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/scottish-highlands_connor-mollison-3rkosr_dgfg-unsplash_1.jpg",
+            "image": "shopify:\/\/shop_images\/Scotland.jpg",
             "heading": "Collezione Uomo",
             "heading_size": "h1",
             "subheading": "<strong>Esplora la nostra pratica e funzionale collezione da uomo<\/strong>",
@@ -24,7 +24,7 @@
         "slide_7mpXTF": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Scotland.jpg",
+            "image": "shopify:\/\/shop_images\/Odle-Mountains-in-Seceda-Dolomites-Italy-photo-landscape-4K-Ultra-HD-Wallpaper-for-Desktop-Laptop-1920x1080.jpg",
             "heading": "Collezione donna",
             "heading_size": "h1",
             "subheading": "<strong>Esplora la nostra comoda ed elegante collezione da donna<\/strong>",
@@ -49,7 +49,7 @@
         "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": true,
-        "change_slides_speed": 5,
+        "change_slides_speed": 7,
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
@@ -89,20 +89,20 @@
         "heading_QntUhy": {
           "type": "heading",
           "settings": {
-            "heading": "Cosa fa <strong>Negozio di Riccardo<\/strong> per l'ambiente",
+            "heading": "Cosa fa <strong>Negozio di Riccardo<\/strong> per l'ambiente?",
             "heading_size": "h1"
           }
         },
         "text_iWnYFE": {
           "type": "text",
           "settings": {
-            "text": "<p>Scopri perchè dovresti scegliere Negozio di Riccardo, scopri cosa facciamo per l'ambiente<\/p>"
+            "text": "<p>Scopri perchè dovresti scegliere Negozio di Riccardo e cosa facciamo per l'ambiente<\/p>"
           }
         },
         "button_WH99TX": {
           "type": "button",
           "settings": {
-            "button_label": "Scopri!",
+            "button_label": "Scopri di più",
             "button_link": "shopify:\/\/blogs\/per-lambiente",
             "button_style_secondary": false,
             "button_label_2": "",
