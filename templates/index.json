@@ -45,8 +45,7 @@
         "slide_7mpXTF"
       ],
       "custom_css": [
-        "slideshow-component {border-radius: 30px;}",
-        "img{border-radius: 30px; }"
+
       ],
       "settings": {
         "layout": "grid",
