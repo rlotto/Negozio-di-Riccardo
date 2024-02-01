@@ -118,7 +118,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "cart_color_scheme": "background-1",
+    "cart_color_scheme": "scheme-ccf2a588-9053-45fc-bf7c-6b0686c21bf8-inverted",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
