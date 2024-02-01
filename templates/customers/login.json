@@ -3,7 +3,8 @@
     "main": {
       "type": "main-login",
       "custom_css": [
-        "#CustomerEmail, #CustomerPassword {border-radius: 10px;}"
+        "#CustomerEmail, #CustomerPassword {border-radius: 10px;}",
+        "div::after {border-radius: 10px;}"
       ],
       "settings": {
         "padding_top": 36,
