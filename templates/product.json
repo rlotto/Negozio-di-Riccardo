@@ -43,6 +43,23 @@
           "type": "description",
           "settings": {
           }
+        },
+        "inventory_JnLcNw": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "collapsible_tab_iWanEQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -52,7 +69,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description"
+        "description",
+        "inventory_JnLcNw",
+        "collapsible_tab_iWanEQ"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -60,7 +79,7 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "hover",
         "mobile_thumbnails": "hide",
