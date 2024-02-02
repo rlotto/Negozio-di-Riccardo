@@ -2,6 +2,7 @@ slideshow-component {
   position: relative;
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 989px) {
@@ -203,4 +204,8 @@ slideshow-component:not(.page-width) .slider-buttons {
   visibility: hidden;
   opacity: 0;
   transform: scale(0.8);
+}
+
+slideshow-component {
+  border-radius: 30px;
 }

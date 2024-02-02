@@ -44,8 +44,12 @@
         "slide_yeGHED",
         "slide_7mpXTF"
       ],
+      "custom_css": [
+        ".banner {border-radius: 10px 10px 0 0;}",
+        ".slideshow__controls {border-radius: 0 0 10px 10px;}"
+      ],
       "settings": {
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": true,
@@ -63,7 +67,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
