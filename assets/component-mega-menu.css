@@ -4,8 +4,9 @@
 
 .mega-menu__content {
   background-color: rgb(var(--color-background));
+  border-top: 0; 
   border-left: 0;
-  border-radius: 0;
+  border-radius: 0 10px;
   border-right: 0;
   left: 0;
   overflow-y: auto;
