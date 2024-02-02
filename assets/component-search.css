@@ -73,9 +73,6 @@ input::-webkit-search-decoration {
   position: relative;
 }
 
-div.field::after {
-  border-radius: 10px;
-}
-.search__input {
+.field::after, .search__input {
   border-radius: 10px;
 }
