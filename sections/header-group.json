@@ -37,7 +37,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-
+        ".field::after, .search__input {border-radius: 10px;}"
       ],
       "settings": {
         "logo_position": "middle-center",
