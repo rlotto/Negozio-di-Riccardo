@@ -18,7 +18,7 @@
         - Felpe da uomo <span style="color:red">felpe</span>
     - **Pantaloni da uomo** <span style="color:red">pantaloni</span>
         - *Visualizza tutti*
-        - **Pantaloni da Uomo** 
+        - **Pantaloni lunghi da Uomo** <span style="color:red">pantaloniLunghi</span>
             - *Visualizza tutti*
             - Pantaloni da trekking da uomo <span style="color:red">escursionismo</span>
             - Pantaloni per l'arrampicata da uomo <span style="color:red">arrampicata</span>
