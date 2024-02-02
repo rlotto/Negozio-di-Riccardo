@@ -1107,6 +1107,9 @@
           },
           "options__4": {
             "label": "Always, reduce logo size"
+          },
+          "hover": {
+            "label": "Enable hover on menu items" 
           }
         },
         "header__3": {

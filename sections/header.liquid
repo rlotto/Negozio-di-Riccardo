@@ -496,7 +496,8 @@
   </script>
 {%- endif -%}
 
-<!--Hover Menu-->
+<!--Menù Hover-->
+{% if section.settings.hover %}
 <script>
     let items = document
         .querySelector(".header__inline-menu")
@@ -512,6 +513,8 @@
         });
     });
 </script>
+{% endif section.settings.hover %}
+<!--Menù Hover END-->
 
 {% schema %}
 {
@@ -696,7 +699,14 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    
+    { 
+      "type": "checkbox",
+      "id": "hover",
+      "label":"t:sections.header.settings.hover.label" 
     }
+
   ],
   "blocks": [
     {
