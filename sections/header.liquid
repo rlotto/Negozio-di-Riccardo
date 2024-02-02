@@ -496,7 +496,8 @@
   </script>
 {%- endif -%}
 
-<!--Hover Menu-->
+<!--Menù Hover-->
+{% if section.settings.hover %}
 <script>
     let items = document
         .querySelector(".header__inline-menu")
@@ -512,6 +513,8 @@
         });
     });
 </script>
+{% endif section.settings.hover %}
+<!--Menù Hover END-->
 
 {% schema %}
 {
@@ -594,6 +597,11 @@
       ],
       "default": "on-scroll-up",
       "label": "t:sections.header.settings.sticky_header_type.label"
+    },
+    { 
+      "type": "checkbox",
+      "id": "hover",
+      "label":"t:sections.header.settings.hover.label" 
     },
     {
       "type": "checkbox",

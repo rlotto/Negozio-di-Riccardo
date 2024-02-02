@@ -36,11 +36,15 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+
+      ],
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "reduce-logo-size",
+        "hover": true,
         "show_line_separator": false,
         "color_scheme": "background-1",
         "menu_color_scheme": "background-1",
