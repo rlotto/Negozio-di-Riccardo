@@ -37,7 +37,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".mega-menu__content {border-top: 0;}"
+
       ],
       "settings": {
         "logo_position": "middle-center",
