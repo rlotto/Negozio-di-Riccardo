@@ -4,7 +4,7 @@
   position: relative;
   
 }
-.example1 span{
+.example1 span, .example2 span{
   font-size: 2em;
   color: limegreen;
   position: absolute;
@@ -23,8 +23,12 @@
   animation: example1 10s linear infinite;
 }
 
+.example2 span{
+    animation-delay: 10s;
+}
+
 @media screen and (min-width: 840px) {
-    .example1 span:hover{
+    .example1 span:hover, .example2 span:hover{
     -moz-animation-play-state: paused;
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
@@ -38,7 +42,7 @@
     animation: example1 12s linear infinite;
     }
 }
-.example1 span a{
+.example1 span a, .example2 span a{
   margin-right:50px; 
 }
 /* Move it (define the animation) */
