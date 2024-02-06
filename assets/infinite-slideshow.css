@@ -2,6 +2,8 @@
   height: 50px;	
   overflow: hidden;
   position: relative;
+  white-space: nowrap;
+  width: auto;
 }
 .example1 span{
   font-size: 2em;
@@ -27,6 +29,13 @@
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
+
+@media screen and (max-width: 840px) {
+	.example1 span {
+       		width: auto;
+       		white-space: nowrap;
+  	}
+    }
 .example1 span a{
   margin-right:50px; 
 }
