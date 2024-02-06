@@ -35,7 +35,7 @@
     .example1 span{
     -moz-animation: example1 10s linear infinite;
     -webkit-animation: example1 10s linear infinite;
-    animation: example1 10s linear infinite;
+    animation: example1 12s linear infinite;
     }
 }
 .example1 span a{
