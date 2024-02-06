@@ -33,11 +33,9 @@
 }
 
 @media screen and (max-width: 840px) {
-	.example1 span {
-       		width: auto;
-       		white-space: nowrap;
-  	}
+	
     }
+
 .example1 span a{
   margin-right:50px; 
 }
