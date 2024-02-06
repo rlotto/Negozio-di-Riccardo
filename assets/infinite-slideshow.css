@@ -17,6 +17,9 @@
   -moz-transform:translateX(100%);
   -webkit-transform:translateX(100%);	
   transform:translateX(100%);
+}
+
+.example1 span{
   /* Apply animation to this element */	
   -moz-animation: example1 10s linear infinite;
   -webkit-animation: example1 10s linear infinite;
@@ -24,7 +27,10 @@
 }
 
 .example2 span{
-    animation-delay: 5s;
+  /* Apply animation to this element */	
+  -moz-animation: example2 10s 5s linear infinite;
+  -webkit-animation: example2 10s 5s linear infinite;
+  animation: example2 10s 5s linear infinite;
 }
 
 @media screen and (min-width: 840px) {
@@ -37,8 +43,8 @@
 
 @media screen and (max-width: 840px) {
     .example1 span{
-    -moz-animation: example1 10s linear infinite;
-    -webkit-animation: example1 10s linear infinite;
+    -moz-animation: example1 12s linear infinite;
+    -webkit-animation: example1 12s linear infinite;
     animation: example1 12s linear infinite;
     }
 }
@@ -65,13 +71,4 @@
     -webkit-transform: translateX(-100%); /* Firefox bug fix */
     transform: translateX(-100%); 
   }
-}
-
-@media screen and (max-width: 640px) {
-	.example1 {
-    	span {
-       		width: auto;
-       		white-space: nowrap;
-      	}
-  	}
 }
