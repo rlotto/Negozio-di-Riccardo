@@ -295,6 +295,67 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
+
+      <div class="example1">
+        <span>
+          <a href="#">Title 1</a>
+          <a href="#">Title 2</a>
+          <a href="#">Title 3</a>
+          <a href="#">Title 4</a>
+          <a href="#">Title 5</a>
+        </span>
+      </div>
+    
+      <style>
+        .example1 {
+          height: 50px;	
+          overflow: hidden;
+          position: relative;
+        }
+        .example1 span{
+          font-size: 2em;
+          color: limegreen;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          line-height: 50px;
+          text-align: center;
+          /* Starting position */
+          -moz-transform:translateX(100%);
+          -webkit-transform:translateX(100%);	
+          transform:translateX(100%);
+          /* Apply animation to this element */	
+          -moz-animation: example1 15s linear infinite;
+          -webkit-animation: example1 15s linear infinite;
+          animation: example1 15s linear infinite;
+        }
+        .example1 span a{
+          margin-right:50px; 
+        }
+        /* Move it (define the animation) */
+        @-moz-keyframes example1 {
+          0%   { -moz-transform: translateX(100%); }
+          100% { -moz-transform: translateX(-100%); }
+        }
+        @-webkit-keyframes example1 {
+          0%   { -webkit-transform: translateX(100%); }
+          100% { -webkit-transform: translateX(-100%); }
+        }
+        @keyframes example1 {
+          0%   { 
+            -moz-transform: translateX(100%); /* Firefox bug fix */
+            -webkit-transform: translateX(100%); /* Firefox bug fix */
+            transform: translateX(100%); 		
+          }
+          100% { 
+            -moz-transform: translateX(-100%); /* Firefox bug fix */
+            -webkit-transform: translateX(-100%); /* Firefox bug fix */
+            transform: translateX(-100%); 
+          }
+        }
+      </style>
+
     </main>
 
     {% sections 'footer-group' %}
