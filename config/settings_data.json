@@ -143,6 +143,20 @@
         "settings": {
         }
       },
+      "15683396631634586217": {
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#000000",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": ""
+        }
+      },
       "8765772171712610185": {
         "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/language_switcher\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
         "disabled": false,
@@ -169,23 +183,9 @@
           "custom_position_spacing_left": "20",
           "custom_switcher_font_size": "14px",
           "custom_switcher_border_width": 1,
-          "custom_switcher_text_color": "#5c5c5c",
+          "custom_switcher_text_color": "#000000",
           "custom_switcher_background_color": "#ffffff",
           "custom_switcher_border_color": "#000000"
-        }
-      },
-      "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": true,
-        "settings": {
-          "button_color": "#000000",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#6a6a6a",
-          "button_icon": "chat_bubble",
-          "button_text": "chat_with_us",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": ""
         }
       }
     },

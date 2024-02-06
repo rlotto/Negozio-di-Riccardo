@@ -88,7 +88,9 @@
       }
     },
     "infinite-slideshow1": {
-      "type": "infinite-slideshow"
+      "type": "infinite-slideshow",
+      "settings": {
+      }
     },
     "rich_text_U8xGmM": {
       "type": "rich-text",
@@ -123,7 +125,6 @@
         "text_iWnYFE",
         "button_WH99TX"
       ],
-      "disabled": false,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
