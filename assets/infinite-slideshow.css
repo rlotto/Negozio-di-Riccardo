@@ -24,10 +24,12 @@
   animation: example1 8s linear infinite;
 }
 
-.example1 span:hover{
-  -moz-animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
+@media screen and (min-width: 840px) {
+    .example1 span:hover{
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    }
 }
 
 @media screen and (max-width: 840px) {
