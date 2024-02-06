@@ -123,7 +123,7 @@
         "text_iWnYFE",
         "button_WH99TX"
       ],
-      "disabled": true,
+      "disabled": false,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
