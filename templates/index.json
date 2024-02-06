@@ -87,6 +87,9 @@
         "padding_bottom": 36
       }
     },
+    "infinite-slideshow1": {
+      "type": "infinite-slideshow"
+    },
     "rich_text_U8xGmM": {
       "type": "rich-text",
       "blocks": {
@@ -134,6 +137,7 @@
   "order": [
     "slideshow_U7pghW",
     "featured_collection",
+    "infinite-slideshow1",
     "rich_text_U8xGmM"
   ]
 }
