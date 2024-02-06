@@ -24,7 +24,7 @@
 }
 
 .example2 span{
-    animation-delay: 10s;
+    animation-delay: 5s;
 }
 
 @media screen and (min-width: 840px) {
