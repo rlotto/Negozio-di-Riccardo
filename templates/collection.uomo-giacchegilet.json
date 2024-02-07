@@ -40,12 +40,12 @@
     "featured_collection_bxNhjx": {
       "type": "featured-collection",
       "settings": {
-        "title": "Maglie e felpe da uomo",
+        "title": "Giacche impermeabili da uomo",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "uomo-magliefelpe",
+        "collection": "uomo-giacchegilet-antipioggia",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
