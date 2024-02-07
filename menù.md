@@ -18,11 +18,9 @@
         - Felpe da uomo <span style="color:red">felpe</span>
     - **Pantaloni da uomo** <span style="color:red">pantaloni</span>
         - *Visualizza tutti*
-        - **Pantaloni lunghi da Uomo** <span style="color:red">pantaloniLunghi</span>
-            - *Visualizza tutti*
-            - Pantaloni da trekking da uomo <span style="color:red">escursionismo</span>
-            - Pantaloni per l'arrampicata da uomo <span style="color:red">arrampicata</span>
-            - Pantaloni casual da uomo <span style="color:red">casual</span>
+        - Pantaloni da trekking da uomo <span style="color:red">escursionismo</span>
+        - Pantaloni per l'arrampicata da uomo <span style="color:red">arrampicata</span>
+        - Pantaloni casual da uomo <span style="color:red">casual</span>
         - Short da uomo <span style="color:red">short</span>
         - Baselayer termico da uomo <span style="color:red">baselayer</span>
     - **Cappelli e accessori da uomo** <span style="color:red">cappelliAccessori</span>
