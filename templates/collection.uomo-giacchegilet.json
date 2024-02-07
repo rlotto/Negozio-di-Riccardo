@@ -73,7 +73,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "uomo-pantaloni",
+        "collection": "uomo-giacchegilet-antivento",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -96,7 +96,7 @@
     "featured_collection_LaXHwn": {
       "type": "featured-collection",
       "settings": {
-        "title": "Cappelli e accessori da uomo",
+        "title": "Gilet da uomo",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
