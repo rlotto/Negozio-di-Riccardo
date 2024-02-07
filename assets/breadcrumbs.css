@@ -18,7 +18,7 @@
     content: '';
     display: inline-block;
     height: .20em;
-    margin: 0 .20em 1em;
+    margin: 0 1em 0 0;
     position: relative;
     transform: rotate(45deg);
     vertical-align: middle;
