@@ -1,7 +1,7 @@
 .breadcrumbs {
     width: 1200px; 
     margin: 0 auto;
-    padding: 0 50px; 
+    padding: 0 50px 10px; 
 }
 
 .breadcrumbs__list {
