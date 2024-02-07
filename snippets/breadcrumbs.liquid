@@ -72,7 +72,7 @@
                     </li>
                     <li class="breadcrumbs__item">
                         {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
-                        <a class="breadcrumbs__link" href="{{ tag_url }}" aria-current="page"> {{ current_tags | join: " + "}}</a>
+                        <a class="breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
                     </li>
                 {%- else -%}
                     <li class="breadcrumbs__item">
