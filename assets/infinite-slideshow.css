@@ -44,7 +44,7 @@
 }
 
 .example1 span a {
-    margin-right: 50px;
+    margin: auto;
 }
 
 /* Move it (define the animation) */
