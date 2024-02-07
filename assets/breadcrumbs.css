@@ -1,13 +1,8 @@
 .breadcrumbs {
     margin: 0 auto;
     overflow: hidden; 
-}
-
-@media screen and (max-widht: 750px){
-  .breadcrumbs{
     margin: 0 20px; 
     width: auto; 
-  }
 }
 
 @media screen and (min-width: 750px){
