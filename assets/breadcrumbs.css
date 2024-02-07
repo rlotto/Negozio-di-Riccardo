@@ -1,15 +1,19 @@
 .breadcrumbs {
     margin: 0 auto;
     overflow: hidden; 
+}
+
+@media screen and (max-widht: 900px){
+  .breadcrumbs{
     margin: 0 20px; 
     width: auto; 
+  }
 }
 
 @media screen and (min-width: 750px){
   .breadcrumbs {
     padding: 10px 55px 0; 
     width: 1200px;
-    margin: 0 auto; 
   }
 }
 
