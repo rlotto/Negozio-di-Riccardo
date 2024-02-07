@@ -3,7 +3,7 @@
     overflow: hidden; 
 }
 
-@media screen and (max-widht: 900px){
+@media screen and (max-widht: 750px){
   .breadcrumbs{
     margin: 0 20px; 
     width: auto; 
