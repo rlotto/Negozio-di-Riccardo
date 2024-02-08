@@ -93,7 +93,7 @@
     max-width: none;
   }
   #title__area {
-    display: block;
+    display: flex;
   }
   #featured-collection-title, #featured-colllection-viewAll {
     width: 500px;
