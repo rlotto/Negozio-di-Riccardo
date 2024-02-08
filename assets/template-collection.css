@@ -95,6 +95,7 @@
   #title__area {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
   #featured-collection-title, #featured-collection-viewAll {
     width: auto;
@@ -103,9 +104,6 @@
   #featured-collection-viewAll {
     margin-left: .8rem;
     font-size: 80%;
-    a {
-      text-decoration: none;
-    }
   }
 }
 
