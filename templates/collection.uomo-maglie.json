@@ -40,12 +40,12 @@
     "featured_collection_bxNhjx": {
       "type": "featured-collection",
       "settings": {
-        "title": "Giacche impermeabili da uomo",
+        "title": "Maglie tecniche da uomo",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "uomo-giacchegilet-antipioggia",
+        "collection": "maglie-tecniche-da-uomo",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
