@@ -99,6 +99,10 @@
     width: auto;
     margin: 0; 
   }
+  #featured-colllection-viewAll {
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
 }
 
 .collection__view-all a:not(.link) {
