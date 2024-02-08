@@ -1,11 +1,11 @@
 {{ 'infinite-slideshow.css' | asset_url | stylesheet_tag }}
+{{ 'infinite-slideshow.js' | asset_url | script_tag }}
 
-<div class="example1">
-    <span class='loghi'>
-      <a href="https://riccardo-lotto-dev-store.myshopify.com/collections/patagonia">Patagonia</a>
-      <a href="https://riccardo-lotto-dev-store.myshopify.com/collections/timberland">Timberland</a>
-
-    </span>
+<div class="swiper-container">
+  <div class='swiper-wrepper'>
+    <div class="swiper-slide"><a href="https://riccardo-lotto-dev-store.myshopify.com/collections/patagonia">Patagonia</a></div>
+    <div class="swiper-slide"><a href="https://riccardo-lotto-dev-store.myshopify.com/collections/timberland">Timberland</a></div>
   </div>
+</div>
 
 
