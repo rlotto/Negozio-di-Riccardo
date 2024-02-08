@@ -92,6 +92,10 @@
     padding: 0 1.5rem;
     max-width: none;
   }
+  .collection__title {
+    display: inline-block;
+  }
+
 }
 
 .collection__view-all a:not(.link) {
