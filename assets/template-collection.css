@@ -94,14 +94,15 @@
   }
   #title__area {
     display: flex;
+    align-items: center;
   }
-  #featured-collection-title, #featured-colllection-viewAll {
+  #featured-collection-title, #featured-collection-viewAll {
     width: auto;
     margin: 0; 
   }
-  #featured-colllection-viewAll {
+  #featured-collection-viewAll {
     margin-left: 1rem;
-    vertical-align: middle;
+    
   }
 }
 
