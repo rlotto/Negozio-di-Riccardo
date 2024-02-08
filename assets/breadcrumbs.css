@@ -56,5 +56,5 @@
 .breadcrumbs__link__product {
     pointer-events: none;
     cursor: default;
-    color: black;
+    font-style: bold;
 }
