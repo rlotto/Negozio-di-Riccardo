@@ -4,27 +4,19 @@
     - *Visualizza tutti*
     - **Nuovi arrivi da uomo**
     - **Giacche e gilets da uomo** <span style="color:red">giaccheGilet</span>
-        - *Visualizza tutti*
         - Giacche e gilet imbottiti da uomo <span style="color:red">imbottiti</span>
         - Giacche impermeabili da uomo <span style="color:red">antiPioggia</span>
-        - Giacche anti-pioggia da uomo <span style="color:red">antiVento</span>
+        - Giacche anti-vento da uomo <span style="color:red">antiVento</span>
         - Gilet da uomo <span style="color:red">gilet</span>
-        - Giacche casual da uomo <span style="color:red">casual</span>
     - **Maglie e felpe da uomo** <span style="color:red">maglieFelpe</span>
-        - *Visualizza tutti*
         - T-shirt da uomo <span style="color:red">tshirt</span>
         - Maglie tecniche da uomo <span style="color:red">maglieTecniche</span>
-        - Baselayer termico da uomo <span style="color:red">baselayer</span>
         - Felpe da uomo <span style="color:red">felpe</span>
     - **Pantaloni da uomo** <span style="color:red">pantaloni</span>
-        - *Visualizza tutti*
-        - Pantaloni da trekking da uomo <span style="color:red">escursionismo</span>
+        - Pantaloni da trekking da uomo <span style="color:red">trekking</span>
         - Pantaloni per l'arrampicata da uomo <span style="color:red">arrampicata</span>
         - Pantaloni casual da uomo <span style="color:red">casual</span>
-        - Short da uomo <span style="color:red">short</span>
-        - Baselayer termico da uomo <span style="color:red">baselayer</span>
     - **Cappelli e accessori da uomo** <span style="color:red">cappelliAccessori</span>
-        - *Visualizza tutti*
         - Cappelli da uomo <span style="color:red">cappelli</span>
         - Cinture da uomo <span style="color:red">cinture</span>
         - Guanti da uomo <span style="color:red">guanti</span>
