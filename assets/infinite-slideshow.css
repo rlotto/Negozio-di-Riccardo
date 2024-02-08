@@ -14,16 +14,15 @@
     line-height: 50px;
     text-align: center;
     /* Starting position */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+
+    transform: translateX(0px);
 }
+
 
 .example1 span {
     /* Apply animation to this element */
-    -moz-animation: example1 10s linear infinite;
-    -webkit-animation: example1 10s linear infinite;
-    animation: example1 10s linear infinite;
+
+    animation: 41.809s linear 0s infinite normal none running marqueeAnimation-3585231;
 }
 
 @media screen and (min-width: 840px) {
