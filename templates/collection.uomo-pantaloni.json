@@ -12,12 +12,12 @@
     "featured_collection_hznDm7": {
       "type": "featured-collection",
       "settings": {
-        "title": "Giacche imbottite da uomo",
+        "title": "Pantaloni da trekking da uomo",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "uomo-giacchegilet-imbottite",
+        "collection": "pantaloni-da-trekking-da-uomo",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
