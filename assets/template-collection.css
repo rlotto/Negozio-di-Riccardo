@@ -94,7 +94,7 @@
   }
   #title__area {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
   #featured-collection-title, #featured-collection-viewAll {
     width: auto;
