@@ -52,3 +52,7 @@
     color: #476154;
     text-decoration: none;
 }
+
+.breadcrumbs__link:last-child {
+    color: #ff0000;
+}
