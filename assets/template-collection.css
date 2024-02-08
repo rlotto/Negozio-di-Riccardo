@@ -103,7 +103,9 @@
   #featured-collection-viewAll {
     margin-left: .8rem;
     font-size: 80%;
-    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
