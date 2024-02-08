@@ -17,7 +17,7 @@
             {%- when 'product' -%}
                 {%- if collection.url -%}
                     <li class="breadcrumbs__item">
-                        {{ collection.title | link_to: collection.url }}
+                        <a class="breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
                     </li>
                 {%- endif -%}
                 <li class="breadcrumbs__item">
