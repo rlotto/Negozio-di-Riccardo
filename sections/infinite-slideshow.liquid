@@ -1,11 +1,25 @@
 {{ 'infinite-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'infinite-slideshow.js' | asset_url | script_tag }}
 
-<div class="swiper-container">
-  <div class='swiper-wrepper'>
-    <div class="swiper-slide">Patagonia</div>
-    <div class="swiper-slide">Timberland</div>
+<main>
+  <h2 class="tiny">Putting design & technology at the heart of business</h2>
+
+  <div class="swiper-container swiper--top">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Data & Analytics</div>
+        <div class="swiper-slide">Prototyping</div>
+        <div class="swiper-slide">Research, Strategy & Design</div>
+        <div class="swiper-slide">Digital Product Design & Development</div>
+        <div class="swiper-slide">Mobile (App) Design</div>
+    </div>
   </div>
-</div>
-
-
+  <div class="swiper-container swiper--bottom">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Research, Strategy & Design</div>
+        <div class="swiper-slide">Digital Product Design & Development</div>
+        <div class="swiper-slide">Mobile (App) Design</div>
+       <div class="swiper-slide">Data & Analytics</div>
+        <div class="swiper-slide">Prototyping</div>
+    </div>
+  </div>
+</main>
