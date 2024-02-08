@@ -92,7 +92,7 @@
     padding: 0 1.5rem;
     max-width: none;
   }
-  .collection__title {
+  #title__area {
     display: block;
   }
   #featured-collection-title, #featured-colllection-viewAll {
