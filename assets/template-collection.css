@@ -95,7 +95,9 @@
   .collection__title {
     display: block;
   }
-
+  #featured-collection-title {
+    width: auto;
+  }
 }
 
 .collection__view-all a:not(.link) {
