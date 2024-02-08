@@ -93,7 +93,7 @@
     max-width: none;
   }
   .collection__title {
-    display: inline-block;
+    display: block;
   }
 
 }
