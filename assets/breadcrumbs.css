@@ -48,11 +48,12 @@
     text-decoration: underline;
 }
 
-.breadcrumbs__link {
+.breadcrumbs__link, .breadcrumbs__link__product {
     color: #476154;
     text-decoration: none;
 }
 
 .breadcrumbs__link__product {
-    color: #ff0000;
+    pointer-events: none;
+    cursor: default;
 }
