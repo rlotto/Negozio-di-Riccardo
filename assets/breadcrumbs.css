@@ -53,6 +53,6 @@
     text-decoration: none;
 }
 
-.breadcrumbs__item:last-child:after {
+.breadcrumbs__link__product {
     color: #ff0000;
 }
