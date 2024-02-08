@@ -95,7 +95,7 @@
   .collection__title {
     display: block;
   }
-  #featured-collection-title {
+  #featured-collection-title, #featured-collection-viewAll {
     width: auto;
   }
 }
