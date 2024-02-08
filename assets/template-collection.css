@@ -96,7 +96,7 @@
     display: block;
   }
   #featured-collection-title, #featured-collection-viewAll {
-    width: auto;
+    width: 500px;
   }
 }
 
