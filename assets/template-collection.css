@@ -101,8 +101,8 @@
     margin: 0; 
   }
   #featured-collection-viewAll {
-    margin-left: 1rem;
-    
+    margin-left: .8rem;
+    font-size: 80%;
   }
 }
 
