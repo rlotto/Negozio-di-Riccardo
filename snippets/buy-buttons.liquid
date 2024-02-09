@@ -117,7 +117,7 @@
   {% comment %}
     Metodi di pagamento
   {% endcomment %}
-  {%- if section.settings.payment_enable -%}
+  {%- if section.settings.payment_enable_product -%}
   <div class="payment__metods">
     <ul style="justify-content: center;" class="list list-payment" role="list">
       {%- for type in shop.enabled_payment_types -%}
@@ -162,17 +162,3 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
-
-{% schema %}
-{
-  "name": "Buy buttons",
-  "settings": [
-    {
-      "type": "checkbox",
-      "id": "payment_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.payment_enable.label"
-    }
-    ]
-}
-{% endschema %}
