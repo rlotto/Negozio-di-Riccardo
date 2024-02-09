@@ -114,8 +114,10 @@
     </div>
   {%- endif -%}
 
-  <div style="justify-content: center;" class="footer__payment">
-    <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+  {% comment %}
+    Metodi di pagamento
+  {% endcomment %}
+  <div  class="payment__metods">
     <ul class="list list-payment" role="list">
       {%- for type in shop.enabled_payment_types -%}
       <li class="list-payment__item">
@@ -124,6 +126,9 @@
       {%- endfor -%}
     </ul>
   </div>
+  <style>
+    .payment__metods{}
+  </style>
 
   {%- if show_pickup_availability -%}
     {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
