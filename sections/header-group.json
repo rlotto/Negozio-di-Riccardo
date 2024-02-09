@@ -8,21 +8,13 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Benvenuto nel nostro store",
-            "link": ""
-          }
-        },
-        "announcement_xi7XFG": {
-          "type": "announcement",
-          "settings": {
-            "text": "SPEDIZIONE GRATUITA su ordini superiori a 100€",
+            "text": "Benvenuto nella tua area privata",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_xi7XFG"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "background-1",
