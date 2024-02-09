@@ -118,7 +118,7 @@
     Metodi di pagamento
   {% endcomment %}
   <div  class="payment__metods">
-    <ul class="list list-payment" role="list">
+    <ul style="justify-content: center;" class="list list-payment" role="list">
       {%- for type in shop.enabled_payment_types -%}
       <li class="list-payment__item">
         {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
@@ -126,12 +126,7 @@
       {%- endfor -%}
     </ul>
   </div>
-  <style>
-    .payment__metods.list-payment {
-      justify-content: center;
-    }
-  </style>
-
+  
   {%- if show_pickup_availability -%}
     {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
