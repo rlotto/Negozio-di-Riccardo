@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', (event) => {
     const carouselContainer = document.getElementById('carouselContainer');
 
     // Clone the carousel content to create a continuous loop
@@ -28,4 +27,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     let lastTimestamp = null;
     requestAnimationFrame(animateCarousel);
-});
