@@ -18,9 +18,9 @@
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     /* Apply animation to this element */
-    -moz-animation: example1 10s linear infinite;
-    -webkit-animation: example1 10s linear infinite;
-    animation: example1 10s linear infinite;
+    -moz-animation: example1 10s infinite;
+    -webkit-animation: example1 10s infinite;
+    animation: example1 10s infinite;
 }
 
 @media screen and (min-width: 840px) {
@@ -34,9 +34,9 @@
 
 @media screen and (max-width: 840px) {
     .example1 span {
-        -moz-animation: example1 12s linear infinite;
-        -webkit-animation: example1 12s linear infinite;
-        animation: example1 12s linear infinite;
+        -moz-animation: example1 12s infinite;
+        -webkit-animation: example1 12s infinite;
+        animation: example1 12s infinite;
     }
 }
 
