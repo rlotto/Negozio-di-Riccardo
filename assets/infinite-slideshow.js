@@ -63,4 +63,6 @@ function rotateMarquee(containers) {
             container.items.push(container.items.shift());
         }
     }
+
+    requestAnimationFrame(() => rotateMarquee(containers));
 }
