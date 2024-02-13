@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const marqueeContainer = document.getElementById('marqueeContainer');
 
+    // Calculate the width of the original content
+    const originalContentWidth = marqueeContainer.scrollWidth;
+
     // Clone the marquee content to create a continuous loop
     const marqueeItems = marqueeContainer.innerHTML;
     for(let i = 0; i < 10; i++) { // Increase the number as needed
@@ -13,8 +16,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     let lastTimestamp = null;
     let animationId = null;
-
-    const originalContentWidth = marqueeContainer.scrollWidth / 10; // Calculate the width of the original content
 
     function animateMarquee(timestamp) {
         if (!lastTimestamp) {
