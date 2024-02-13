@@ -119,6 +119,7 @@
         "column_VMpygM": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/scottish-highlands_connor-mollison-3rkosr_dgfg-unsplash_1.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
