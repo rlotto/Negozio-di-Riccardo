@@ -23,7 +23,7 @@ function createMarqueeContainer(id) {
     const images = Array.from(container.getElementsByTagName("img"));
     const itemWidth = getObjectWidth(images[0]) + 5;
     const fullWidth = getObjectWidth(container);
-    const height = container.style.height;
+    const height = container.offsetHeight; // Use offsetHeight instead of style.height
 
     container.onmouseout = () => rotateMarquee(marqueeContainers);
     container.onmouseover = () => cancelAnimationFrame(marqueeContainers[0].animationID);
@@ -38,7 +38,7 @@ function createMarqueeContainer(id) {
         img.style.position = "absolute";
         img.style.left = itemWidth * i + "px";
         img.style.width = itemWidth + "px";
-        img.style.height = height;
+        img.style.height = height + "px"; // Make sure to append "px"
         container.appendChild(img);
         container.items[i] = img;
     }
@@ -47,24 +47,15 @@ function createMarqueeContainer(id) {
 }
 
 function rotateMarquee(containers) {
-    if (!containers) return;
-
-    for (let j = containers.length - 1; j > -1; j--) {
-        const maxItems = containers[j].items.length;
-
-        for (let i = 0; i < maxItems; i++) {
-            const itemStyle = containers[j].items[i].style;
-            itemStyle.left = parseInt(itemStyle.left, 10) - 1 + "px";
-        }
-
-        const firstItemStyle = containers[j].items[0].style;
-
-        if (parseInt(firstItemStyle.left, 10) + parseInt(firstItemStyle.width, 10) < 0) {
-            const shiftedItem = containers[j].items.shift();
-            shiftedItem.style.left = parseInt(shiftedItem.style.left) + parseInt(shiftedItem.style.width) * maxItems + "px";
-            containers[j].items.push(shiftedItem);
+    for (let j = 0; j < containers.length; j++) {
+        const container = containers[j];
+        for (let i = 0; i < container.items.length; i++) {
+            const img = container.items[i];
+            img.style.left = (parseInt(img.style.left, 10) - 1) + "px";
+            if (parseInt(img.style.left, 10) + img.offsetWidth < 0) {
+                img.style.left = (container.items.length * img.offsetWidth) + "px";
+            }
         }
     }
-
-    containers[0].animationID = requestAnimationFrame(() => rotateMarquee(containers));
+    requestAnimationFrame(() => rotateMarquee(containers));
 }
