@@ -1,5 +1,5 @@
 function initializeMarquee() {
-    createMarqueeContainer('marquee');
+    createMarqueeContainer('logos-marquee');
     rotateMarquee(marqueeContainers);
 }
 
