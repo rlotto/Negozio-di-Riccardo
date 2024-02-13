@@ -1,7 +1,3 @@
-:root {
-    --items-per-page: 4;
-}
-
 .logos-marquee {
     margin: 20px 0;
     width: 100%;
@@ -11,11 +7,12 @@
 
 .marquee-container {
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .marquee-item {
 
-    display: inline-block;
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
