@@ -18,5 +18,5 @@
 }
 
 .marquee-item img {
-    min-width: 20%;
+    min-width: calc(100% / 5);
 }
