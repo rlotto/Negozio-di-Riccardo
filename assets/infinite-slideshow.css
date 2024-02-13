@@ -17,6 +17,7 @@
     display: inline-block;
     min-width: calc(100% / var(--items-per-page));
     box-sizing: border-box;
+    height: 100px;
     padding: 20px;
     text-align: center;
     
