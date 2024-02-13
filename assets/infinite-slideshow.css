@@ -1,5 +1,5 @@
 .marquee-container {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     text-align: center;
     margin: 0 auto;
@@ -11,6 +11,6 @@
     font-size: 24px;
 }
 
-.marquee-container a {
+.marquee-container img {
     padding: 0 20px;
 }
