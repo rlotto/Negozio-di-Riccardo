@@ -1,4 +1,5 @@
-
+document.addEventListener('DOMContentLoaded', (event) => {
+    const marqueeContainer = document.getElementById('marqueeContainer');
 
     // Clone the marquee content to create a continuous loop
     const marqueeItems = marqueeContainer.innerHTML;
@@ -27,3 +28,4 @@
 
     let lastTimestamp = null;
     requestAnimationFrame(animateMarquee);
+});
