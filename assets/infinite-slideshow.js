@@ -8,6 +8,8 @@ carouselContainer.innerHTML += carouselItems;
 let scrollLeft = 0;
 const scrollSpeed = 5; // Adjust the scroll speed as needed
 
+let lastTimestamp = null;
+
 function animateCarousel(timestamp) {
     if (!lastTimestamp) {
         lastTimestamp = timestamp;
@@ -25,5 +27,4 @@ function animateCarousel(timestamp) {
     requestAnimationFrame(animateCarousel);
 }
 
-let lastTimestamp = null;
 requestAnimationFrame(animateCarousel);

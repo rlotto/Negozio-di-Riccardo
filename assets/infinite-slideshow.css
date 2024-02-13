@@ -1,3 +1,6 @@
+:root {
+    --items-per-page: 4;
+}
 
 .carousel {
     width: 100%;
