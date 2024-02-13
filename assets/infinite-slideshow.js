@@ -62,4 +62,4 @@ function initializeMarquee() {
     }
 
     containers[0].animationID=requestAnimationFrame(()=> rotateMarquee(containers));
-  }
+}
