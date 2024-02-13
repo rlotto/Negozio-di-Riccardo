@@ -10,3 +10,7 @@
     white-space: nowrap;
     font-size: 24px;
 }
+
+.marquee-container a {
+    padding: 0 20px;
+}
