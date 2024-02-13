@@ -15,7 +15,6 @@
 
 .marquee-item {
 
-    max-width: calc(100% / var(--items-per-page));
     display: inline-block;
     box-sizing: border-box;
     padding: 20px;
