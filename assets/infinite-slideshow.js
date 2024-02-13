@@ -1,63 +1,29 @@
-function initializeMarquee() {
-    const container = document.getElementById('logos-marquee');
-    const images = Array.from(container.getElementsByTagName("img"));
-    const imagesLoaded = images.map(img => new Promise(resolve => img.onload = resolve));
-    Promise.all(imagesLoaded).then(() => {
-        createMarqueeContainer('logos-marquee');
-        rotateMarquee(marqueeContainers);
-    });
-}
+const carouselContainer = document.getElementById('carouselContainer');
 
-window.onload = initializeMarquee;
+// Clone the carousel content to create a continuous loop
+const carouselItems = carouselContainer.innerHTML;
+carouselContainer.innerHTML += carouselItems;
 
-function getObjectWidth(obj) {
-    if (obj.naturalWidth) return obj.naturalWidth;
-    if (obj.clip) return obj.clip.width;
-    return 0;
-}
+// Set up animation
+let scrollLeft = 0;
+const scrollSpeed = 4; // Adjust the scroll speed as needed
 
-const marqueeContainers = [];
-
-function createMarqueeContainer(id) {
-    const container = document.getElementById(id);
-    const images = Array.from(container.getElementsByTagName("img")).map(img => img.cloneNode()); // Clone images
-    const itemWidth = images[0].offsetWidth;
-    const fullWidth = container.offsetWidth;
-
-    // Clear the container
-    container.innerHTML = "";
-
-    container.items = [];
-    const maxItems = Math.ceil(fullWidth / itemWidth) * 2; // Double the items for seamless animation
-
-    for (let i = 0; i < maxItems; i++) {
-        const img = images[i % images.length].cloneNode(); // Clone the image
-        img.style.position = "absolute";
-        img.style.left = (itemWidth * i) + "px";
-        container.appendChild(img);
-        container.items[i] = img;
+function animateCarousel(timestamp) {
+    if (!lastTimestamp) {
+        lastTimestamp = timestamp;
     }
 
-    return container;
+    const deltaTime = timestamp - lastTimestamp;
+    lastTimestamp = timestamp;
+
+    scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
+    if (scrollLeft >= carouselContainer.scrollWidth / 2) {
+        scrollLeft = 0;
+    }
+    carouselContainer.style.transform = `translateX(-${scrollLeft}px)`;
+
+    requestAnimationFrame(animateCarousel);
 }
 
-function rotateMarquee(container) {
-    const speed = 2; // Adjust speed as needed
-    const itemWidth = container.items[0].offsetWidth;
-    container.items.forEach((img, i) => {
-        const left = img.offsetLeft - speed;
-        if (left + itemWidth < 0) {
-            img.style.left = (itemWidth * (container.items.length - 1)) + "px";
-            container.appendChild(img); // Move the image to the end
-        } else {
-            img.style.left = left + "px";
-        }
-    });
-
-    requestAnimationFrame(() => rotateMarquee(container));
-}
-
-window.onload = function() {
-    const container = createMarqueeContainer('logos-marquee');
-    rotateMarquee(container);
-};
+let lastTimestamp = null;
+requestAnimationFrame(animateCarousel);

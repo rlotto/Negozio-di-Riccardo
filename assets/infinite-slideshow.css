@@ -1,17 +1,24 @@
-.marquee-container {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%; /* This is required, adjust as needed */
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 24px;
+:root {
+    --items-per-page: 4;
 }
 
-.marquee-container img {
-    width: auto;
-    padding: 0 20px;
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    /* Prevent logos from wrapping to the next line */
+    white-space: nowrap;
+}
+
+.carousel-item {
+    display: inline-block;
+    min-width: calc(100% / var(--items-per-page));
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
 }
