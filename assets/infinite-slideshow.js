@@ -49,13 +49,19 @@ function createMarqueeContainer(id) {
 function rotateMarquee(containers) {
     for (let j = 0; j < containers.length; j++) {
         const container = containers[j];
+        const firstImg = container.items[0];
+        const speed = 1; // You can adjust this value to change the speed of the marquee
+
         for (let i = 0; i < container.items.length; i++) {
             const img = container.items[i];
-            img.style.left = (parseInt(img.style.left, 10) - 1) + "px";
-            if (parseInt(img.style.left, 10) + img.offsetWidth < 0) {
-                img.style.left = (container.items.length * img.offsetWidth) + "px";
-            }
+            img.style.left = (parseInt(img.style.left, 10) - speed) + "px";
+        }
+
+        if (parseInt(firstImg.style.left, 10) + firstImg.offsetWidth < 0) {
+            const lastImg = container.items[container.items.length - 1];
+            firstImg.style.left = (parseInt(lastImg.style.left, 10) + lastImg.offsetWidth) + "px";
+            container.items.push(container.items.shift());
         }
     }
-    requestAnimationFrame(() => rotateMarquee(containers));
-}
+
+    
