@@ -3,10 +3,11 @@
 }
 
 .logo-marquee {
-    margin: 20px 0;
+    
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin: 20px 0;
 }
 
 .marquee-container {
@@ -19,7 +20,7 @@
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
-    
+
     background-color: #f2f2f2;
     border: 1px solid #ccc;
 }
