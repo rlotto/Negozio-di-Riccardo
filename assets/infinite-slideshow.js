@@ -21,48 +21,40 @@ const marqueeContainers = [];
 function createMarqueeContainer(id) {
     const container = document.getElementById(id);
     const images = Array.from(container.getElementsByTagName("img"));
-    const itemWidth = getObjectWidth(images[0]) + 5;
-    const fullWidth = getObjectWidth(container);
-    const height = container.offsetHeight; // Use offsetHeight instead of style.height
-
-    container.onmouseout = () => rotateMarquee(marqueeContainers);
-    container.onmouseover = () => cancelAnimationFrame(marqueeContainers[0].animationID);
+    const itemWidth = images[0].offsetWidth;
+    const fullWidth = container.offsetWidth;
 
     container.items = [];
-    const maxItems = Math.ceil(fullWidth / itemWidth) + 1;
-
-    container.innerHTML = ""; // Clear the container after we've got the images
+    const maxItems = Math.ceil(fullWidth / itemWidth) * 2; // Double the items for seamless animation
 
     for (let i = 0; i < maxItems; i++) {
         const img = images[i % images.length].cloneNode(); // Clone the image
         img.style.position = "absolute";
-        img.style.left = itemWidth * i + "px";
-        img.style.width = itemWidth + "px";
-        img.style.height = height + "px"; // Make sure to append "px"
+        img.style.left = (itemWidth * i) + "px";
         container.appendChild(img);
         container.items[i] = img;
     }
 
-    marqueeContainers.push(container);
+    return container;
 }
 
-function rotateMarquee(containers) {
-    for (let j = 0; j < containers.length; j++) {
-        const container = containers[j];
-        const firstImg = container.items[0];
-        const speed = 1; // You can adjust this value to change the speed of the marquee
-
-        for (let i = 0; i < container.items.length; i++) {
-            const img = container.items[i];
-            img.style.left = (parseInt(img.style.left, 10) - speed) + "px";
+function rotateMarquee(container) {
+    const speed = 2; // Adjust speed as needed
+    const itemWidth = container.items[0].offsetWidth;
+    container.items.forEach((img, i) => {
+        const left = img.offsetLeft - speed;
+        if (left + itemWidth < 0) {
+            img.style.left = (itemWidth * (container.items.length - 1)) + "px";
+            container.appendChild(img); // Move the image to the end
+        } else {
+            img.style.left = left + "px";
         }
+    });
 
-        if (parseInt(firstImg.style.left, 10) + firstImg.offsetWidth < 0) {
-            const lastImg = container.items[container.items.length - 1];
-            firstImg.style.left = (parseInt(lastImg.style.left, 10) + lastImg.offsetWidth) + "px";
-            container.items.push(container.items.shift());
-        }
-    }
-
-    requestAnimationFrame(() => rotateMarquee(containers));
+    requestAnimationFrame(() => rotateMarquee(container));
 }
+
+window.onload = function() {
+    const container = createMarqueeContainer('logos-marquee');
+    rotateMarquee(container);
+};
