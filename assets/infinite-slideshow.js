@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let lastTimestamp = null;
     let animationId = null;
 
+    const originalContentWidth = marqueeContainer.scrollWidth / 10; // Calculate the width of the original content
+
     function animateMarquee(timestamp) {
         if (!lastTimestamp) {
             lastTimestamp = timestamp;
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastTimestamp = timestamp;
 
         scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
-        if (scrollLeft >= marqueeContainer.scrollWidth / 2) {
+        if (scrollLeft >= originalContentWidth) { // Reset when scrollLeft is greater or equal to the width of the original content
             scrollLeft = 0;
         }
         marqueeContainer.style.transform = `translateX(-${scrollLeft}px)`;
