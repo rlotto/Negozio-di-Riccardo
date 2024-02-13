@@ -20,12 +20,12 @@ const marqueeContainers = [];
 
 function createMarqueeContainer(id) {
     const container = document.getElementById(id);
-    const images = Array.from(container.getElementsByTagName("img"));
+    const images = Array.from(container.getElementsByTagName("img")).map(img => img.cloneNode()); // Clone images
     const itemWidth = images[0].offsetWidth;
     const fullWidth = container.offsetWidth;
 
-    // Remove original images
-    images.forEach(img => img.parentNode.removeChild(img));
+    // Clear the container
+    container.innerHTML = "";
 
     container.items = [];
     const maxItems = Math.ceil(fullWidth / itemWidth) * 2; // Double the items for seamless animation
