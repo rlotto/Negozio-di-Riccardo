@@ -1,18 +1,15 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const marqueeContainer = document.getElementById('marqueeContainer');
 
-    // Calculate the width of the original content
-    const originalContentWidth = marqueeContainer.scrollWidth;
-
     // Clone the marquee content to create a continuous loop
     const marqueeItems = marqueeContainer.innerHTML;
-    for(let i = 0; i < 10; i++) { // Increase the number as needed
+    for(let i = 0; i < 2; i++) { // Increase the number as needed
         marqueeContainer.innerHTML += marqueeItems;
     }
 
     // Set up animation
     let scrollLeft = 0;
-    const scrollSpeed = 50; // Adjust the scroll speed as needed
+    const scrollSpeed = 4; // Adjust the scroll speed as needed
 
     let lastTimestamp = null;
     let animationId = null;
@@ -26,7 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastTimestamp = timestamp;
 
         scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
-        if (scrollLeft >= originalContentWidth) { // Reset when scrollLeft is greater or equal to the width of the original content
+        if (scrollLeft >= marqueeContainer.scrollWidth / 2) {
             scrollLeft = 0;
         }
         marqueeContainer.style.transform = `translateX(-${scrollLeft}px)`;
