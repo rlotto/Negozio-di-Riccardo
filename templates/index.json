@@ -132,6 +132,10 @@
         "column_bXF3AP",
         "column_VMpygM"
       ],
+      "custom_css": [
+        "img {border-radius: 15px;}",
+        ".multicolumn-card.content-container{border-radius: 20px; }"
+      ],
       "settings": {
         "title": "Negozio di Riccardo e l'ambiente",
         "heading_size": "h1",
