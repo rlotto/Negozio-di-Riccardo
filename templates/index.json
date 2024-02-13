@@ -93,46 +93,59 @@
       "settings": {
       }
     },
-    "rich_text_U8xGmM": {
-      "type": "rich-text",
+    "multicolumn_zh6fem": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_QntUhy": {
-          "type": "heading",
+        "column_3eHrww": {
+          "type": "column",
           "settings": {
-            "heading": "Cosa fa <strong>Negozio di Riccardo<\/strong> per l'ambiente?",
-            "heading_size": "h1"
+            "image": "shopify:\/\/shop_images\/Odle-Mountains-in-Seceda-Dolomites-Italy-photo-landscape-4K-Ultra-HD-Wallpaper-for-Desktop-Laptop-1920x1080.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_iWnYFE": {
-          "type": "text",
+        "column_bXF3AP": {
+          "type": "column",
           "settings": {
-            "text": "<p>Scopri perchè dovresti scegliere Negozio di Riccardo e cosa facciamo per te<\/p>"
+            "image": "shopify:\/\/shop_images\/northern-forest.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "button_WH99TX": {
-          "type": "button",
+        "column_VMpygM": {
+          "type": "column",
           "settings": {
-            "button_label": "Scopri di più",
-            "button_link": "shopify:\/\/blogs\/per-lambiente",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_QntUhy",
-        "text_iWnYFE",
-        "button_WH99TX"
+        "column_3eHrww",
+        "column_bXF3AP",
+        "column_VMpygM"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "title": "Negozio di Riccardo e l'ambiente",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -140,6 +153,6 @@
     "slideshow_U7pghW",
     "featured_collection",
     "infinite-slideshow1",
-    "rich_text_U8xGmM"
+    "multicolumn_zh6fem"
   ]
 }
