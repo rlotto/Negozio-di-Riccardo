@@ -6,7 +6,7 @@ carouselContainer.innerHTML += carouselItems;
 
 // Set up animation
 let scrollLeft = 0;
-const scrollSpeed = 4; // Adjust the scroll speed as needed
+const scrollSpeed = 5; // Adjust the scroll speed as needed
 
 function animateCarousel(timestamp) {
     if (!lastTimestamp) {
