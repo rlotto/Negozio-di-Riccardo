@@ -15,27 +15,27 @@ const marqueeContainers = [];
 
 function createMarqueeContainer(id) {
     const container = document.getElementById(id);
-    const itemWidth = getObjectWidth(container.getElementsByTagName("img")[0]) + 5;
+    const images = Array.from(container.getElementsByTagName("img"));
+    const itemWidth = getObjectWidth(images[0]) + 5;
     const fullWidth = getObjectWidth(container);
-    const imageSrc = container.getElementsByTagName("img")[0].src;
-    container.innerHTML = "";
     const height = container.style.height;
 
     container.onmouseout = () => rotateMarquee(marqueeContainers);
-
     container.onmouseover = () => cancelAnimationFrame(marqueeContainers[0].animationID);
 
     container.items = [];
     const maxItems = Math.ceil(fullWidth / itemWidth) + 1;
 
+    container.innerHTML = ""; // Clear the container after we've got the images
+
     for (let i = 0; i < maxItems; i++) {
-        container.items[i] = document.createElement("img");
-        container.items[i].src = imageSrc;
-        container.items[i].style.position = "absolute";
-        container.items[i].style.left = itemWidth * i + "px";
-        container.items[i].style.width = itemWidth + "px";
-        container.items[i].style.height = height;
-        container.appendChild(container.items[i]);
+        const img = images[i % images.length].cloneNode(); // Clone the image
+        img.style.position = "absolute";
+        img.style.left = itemWidth * i + "px";
+        img.style.width = itemWidth + "px";
+        img.style.height = height;
+        container.appendChild(img);
+        container.items[i] = img;
     }
 
     marqueeContainers.push(container);
