@@ -1,5 +1,5 @@
 :root {
-    --items-per-page: 3;
+    --items-per-page: 4;
 }
 
 .logos-marquee {
@@ -23,6 +23,6 @@
 }
 
 .marquee-item img {
-    max-height: 100px;
+
     max-width: calc(100% / var(--items-per-page));
 }
