@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const carouselContainer = document.getElementById('carouselContainer');
+    const marqueeContainer = document.getElementById('marqueeContainer');
 
-    // Clone the carousel content to create a continuous loop
-    const carouselItems = carouselContainer.innerHTML;
-    carouselContainer.innerHTML += carouselItems;
+    // Clone the marquee content to create a continuous loop
+    const marqueeItems = marqueeContainer.innerHTML;
+    marqueeContainer.innerHTML += marqueeItems;
 
     // Set up animation
     let scrollLeft = 0;
     const scrollSpeed = 4; // Adjust the scroll speed as needed
 
-    function animateCarousel(timestamp) {
+    function animateMarquee(timestamp) {
         if (!lastTimestamp) {
             lastTimestamp = timestamp;
         }
@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastTimestamp = timestamp;
 
         scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
-        if (scrollLeft >= carouselContainer.scrollWidth / 2) {
+        if (scrollLeft >= marqueeContainer.scrollWidth / 2) {
             scrollLeft = 0;
         }
-        carouselContainer.style.transform = `translateX(-${scrollLeft}px)`;
+        marqueeContainer.style.transform = `translateX(-${scrollLeft}px)`;
 
-        requestAnimationFrame(animateCarousel);
+        requestAnimationFrame(animateMarquee);
     }
 
     let lastTimestamp = null;
-    requestAnimationFrame(animateCarousel);
+    requestAnimationFrame(animateMarquee);
 });
