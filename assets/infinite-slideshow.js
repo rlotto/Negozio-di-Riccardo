@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let scrollLeft = 0;
     const scrollSpeed = 4; // Adjust the scroll speed as needed
 
+    let lastTimestamp = null;
+
     function animateMarquee(timestamp) {
         if (!lastTimestamp) {
             lastTimestamp = timestamp;
@@ -26,6 +28,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         requestAnimationFrame(animateMarquee);
     }
 
-    let lastTimestamp = null;
     requestAnimationFrame(animateMarquee);
 });
