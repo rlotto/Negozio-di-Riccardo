@@ -3,13 +3,13 @@
 }
 
 .logo-marquee {
+    margin: 20px 0;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
 .marquee-container {
-    /* Prevent logos from wrapping to the next line */
     white-space: nowrap;
 }
 
@@ -19,6 +19,7 @@
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
+    
     background-color: #f2f2f2;
     border: 1px solid #ccc;
 }
