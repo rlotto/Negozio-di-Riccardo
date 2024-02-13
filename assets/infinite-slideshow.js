@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Clone the marquee content to create a continuous loop
     const marqueeItems = marqueeContainer.innerHTML;
-    for(let i = 0; i < 3; i++) { // Increase the number as needed
+    cloneSpeed = 1; // Adjust the speed as needed
+    for(let i = 0; i < cloneSpeed; i++) { // Increase the number as needed
         marqueeContainer.innerHTML += marqueeItems;
     }
 
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastTimestamp = timestamp;
 
         scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
-        if (scrollLeft >= marqueeContainer.scrollWidth / 4) {
+        if (scrollLeft >= marqueeContainer.scrollWidth / cloneSpeed+1 ) {
             scrollLeft = 0;
         }
         marqueeContainer.style.transform = `translateX(-${scrollLeft}px)`;
