@@ -2,18 +2,18 @@
     --items-per-page: 4;
 }
 
-.carousel {
+.logo-marquee {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-container {
+.marquee-container {
     /* Prevent logos from wrapping to the next line */
     white-space: nowrap;
 }
 
-.carousel-item {
+.marquee-item {
     display: inline-block;
     min-width: calc(100% / var(--items-per-page));
     box-sizing: border-box;
