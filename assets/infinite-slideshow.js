@@ -1,6 +1,11 @@
 function initializeMarquee() {
-    createMarqueeContainer('logos-marquee');
-    rotateMarquee(marqueeContainers);
+    const container = document.getElementById('logos-marquee');
+    const images = Array.from(container.getElementsByTagName("img"));
+    const imagesLoaded = images.map(img => new Promise(resolve => img.onload = resolve));
+    Promise.all(imagesLoaded).then(() => {
+        createMarqueeContainer('logos-marquee');
+        rotateMarquee(marqueeContainers);
+    });
 }
 
 window.onload = initializeMarquee;
