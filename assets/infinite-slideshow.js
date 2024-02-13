@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function startAnimation() {
+        lastTimestamp = null;
         animationId = requestAnimationFrame(animateMarquee);
     }
 
