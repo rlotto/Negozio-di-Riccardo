@@ -16,7 +16,6 @@
 .marquee-item {
 
     display: inline-block;
-    min-width: calc(100% / var(--items-per-page));
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
