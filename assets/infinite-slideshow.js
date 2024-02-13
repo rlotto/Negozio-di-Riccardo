@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Set up animation
     let scrollLeft = 0;
-    const scrollSpeed = 10; // Adjust the scroll speed as needed
+    const scrollSpeed = 50; // Adjust the scroll speed as needed
 
     let lastTimestamp = null;
     let animationId = null;
