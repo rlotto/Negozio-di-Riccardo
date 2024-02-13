@@ -12,5 +12,6 @@
 }
 
 .marquee-container img {
+    width: auto;
     padding: 0 20px;
 }

@@ -24,6 +24,9 @@ function createMarqueeContainer(id) {
     const itemWidth = images[0].offsetWidth;
     const fullWidth = container.offsetWidth;
 
+    // Remove original images
+    images.forEach(img => img.parentNode.removeChild(img));
+
     container.items = [];
     const maxItems = Math.ceil(fullWidth / itemWidth) * 2; // Double the items for seamless animation
 
