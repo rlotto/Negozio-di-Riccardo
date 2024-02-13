@@ -14,9 +14,9 @@
 .marquee-item {
     box-sizing: border-box;
     padding: 20px;
-    text-align: center;
+    text-align: center;    min-width: calc(100% / 5);
+
 }
 
 .marquee-item img {
-    min-width: calc(100% / 5);
 }
