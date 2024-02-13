@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const scrollSpeed = 4; // Adjust the scroll speed as needed
 
     let lastTimestamp = null;
+    let animationId = null;
 
     function animateMarquee(timestamp) {
         if (!lastTimestamp) {
@@ -25,8 +26,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         marqueeContainer.style.transform = `translateX(-${scrollLeft}px)`;
 
-        requestAnimationFrame(animateMarquee);
+        animationId = requestAnimationFrame(animateMarquee);
     }
 
-    requestAnimationFrame(animateMarquee);
+    function stopAnimation() {
+        cancelAnimationFrame(animationId);
+    }
+
+    function startAnimation() {
+        animationId = requestAnimationFrame(animateMarquee);
+    }
+
+    marqueeContainer.addEventListener('mouseenter', stopAnimation);
+    marqueeContainer.addEventListener('mouseleave', startAnimation);
+
+    startAnimation();
 });
