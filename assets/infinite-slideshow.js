@@ -6,7 +6,7 @@ function initializeMarquee() {
 window.onload = initializeMarquee;
 
 function getObjectWidth(obj) {
-    if (obj.offsetWidth) return obj.offsetWidth;
+    if (obj.naturalWidth) return obj.naturalWidth;
     if (obj.clip) return obj.clip.width;
     return 0;
 }
@@ -15,9 +15,9 @@ const marqueeContainers = [];
 
 function createMarqueeContainer(id) {
     const container = document.getElementById(id);
-    const itemWidth = getObjectWidth(container.getElementsByTagName("span")[0]) + 5;
+    const itemWidth = getObjectWidth(container.getElementsByTagName("img")[0]) + 5;
     const fullWidth = getObjectWidth(container);
-    const textContent = container.getElementsByTagName("span")[0].innerHTML;
+    const imageSrc = container.getElementsByTagName("img")[0].src;
     container.innerHTML = "";
     const height = container.style.height;
 
@@ -29,8 +29,8 @@ function createMarqueeContainer(id) {
     const maxItems = Math.ceil(fullWidth / itemWidth) + 1;
 
     for (let i = 0; i < maxItems; i++) {
-        container.items[i] = document.createElement("div");
-        container.items[i].innerHTML = textContent;
+        container.items[i] = document.createElement("img");
+        container.items[i].src = imageSrc;
         container.items[i].style.position = "absolute";
         container.items[i].style.left = itemWidth * i + "px";
         container.items[i].style.width = itemWidth + "px";
