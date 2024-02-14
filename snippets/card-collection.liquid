@@ -90,14 +90,15 @@
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
               {%- if card_collection.description == blank -%}
-                  <a
-                    {% if card_collection == blank %}
-                      role="link" aria-disabled="true"
+                  <a class="button button--primary full-unstyled-link" 
+                  {% if card_collection == blank %}
+                    role="link" aria-disabled="true"
                     {% else %}
-                      href="{{ card_collection.url }}"
-                    {% endif %}
-                    class="full-unstyled-link"
-                  >Energia!</a>
+                    href="{{ card_collection.url }}"  
+                  {% endif %}
+                  >
+                    Energia!
+                  </a>
               {%- endif %}
             </h3>
             {%- if card_collection.description != blank -%}
