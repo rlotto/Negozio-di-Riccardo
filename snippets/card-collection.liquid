@@ -90,7 +90,6 @@
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
               {%- if card_collection.description == blank -%}
-                <button>
                   <a
                     {% if card_collection == blank %}
                       role="link" aria-disabled="true"
@@ -99,7 +98,6 @@
                     {% endif %}
                     class="full-unstyled-link"
                   >Energia!</a>
-                </button>
               {%- endif %}
             </h3>
             {%- if card_collection.description != blank -%}
