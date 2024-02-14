@@ -59,6 +59,39 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "collection_list_bL8fbg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_wmj8BY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "uomo-giacchegilet-imbottite"
+          }
+        },
+        "featured_collection_Xn7rix": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_wmj8BY",
+        "featured_collection_Xn7rix"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "disabled": true,
@@ -223,6 +256,7 @@
   },
   "order": [
     "slideshow_U7pghW",
+    "collection_list_bL8fbg",
     "featured_collection",
     "infinite-slideshow1",
     "featured_collection_VBF6Ph",
