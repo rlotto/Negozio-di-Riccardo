@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/woman-in-park-afternoon.jpeg",
             "heading": "Collezione donna",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "subheading": "<strong>Esplora la nostra comoda ed elegante collezione da donna<\/strong>",
             "button_label": "Vai!",
             "link": "shopify:\/\/collections\/donna",
