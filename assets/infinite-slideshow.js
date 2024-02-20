@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastTimestamp = timestamp;
 
         scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
-        if (scrollLeft >= marqueeContainer.scrollWidth / cloneSpeed+1 ) {
+        if (scrollLeft >= marqueeContainer.scrollWidth / cloneSpeed ) {
             scrollLeft = 0;
         }
         marqueeContainer.style.transform = `translateX(-${scrollLeft}px)`;
