@@ -248,6 +248,9 @@
     },
     "featured_blog_hRQExR": {
       "type": "featured-blog",
+      "custom_css": [
+        ".card__inner {border-radius: 20px;}"
+      ],
       "settings": {
         "heading": "Le nostre iniziative",
         "heading_size": "h1",
