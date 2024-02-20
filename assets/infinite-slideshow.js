@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Clone the marquee content to create a continuous loop
     const marqueeItems = marqueeContainer.innerHTML;
-    const cloneSpeed = 4; // Adjust the speed as needed
+    let cloneSpeed = 4; // Adjust the speed of cloning as needed
     for(let i = 0; i < cloneSpeed; i++) { // Increase the number as needed
         marqueeContainer.innerHTML += marqueeItems;
     }
