@@ -229,6 +229,7 @@
         "column_bhgyR6",
         "column_AYf4iW"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
@@ -254,7 +255,7 @@
       "settings": {
         "heading": "Le nostre iniziative",
         "heading_size": "h1",
-        "blog": "le-nostre-iniziative",
+        "blog": "per-lambiente",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "",
